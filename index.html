@@ -1,3 +1,13 @@
 <html>
-	<span>Ducks!</span>
+	<div class="upper-bar">
+	</div>
+	<div id="menu" class="items-list">
+		<menu-item
+		v-for="item in menuItems" v-bind:menu="item" v-bind:key="item.id"></menu-item>
+	</div>
 </html>
+
+<script src="https://unpkg.com/vue"></script>
+<script src="https://unpkg.com/vue-router/dist/vue-router.js"></script>
+<script src="scripts/index.js"></script>
+<link rel="stylesheet" type="text/css" href="style/index.css">
